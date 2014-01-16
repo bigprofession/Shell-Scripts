@@ -1,0 +1,31 @@
+#!/bin/ksh
+
+#by Rona R
+#06/ 04/ 02
+
+#This script is asking for permission to overwrite.
+#---------------------------------------------------------------------------------
+
+
+if (test -f $1)
+	
+then
+	
+	echo "Do you want to over write? 0/1"
+	
+	read DIC
+	
+	if (test $DIC = 1)
+	
+	then
+		
+			cp $HOME/com264/bin/justtest/$1 $HOME/$1
+	
+	fi
+
+else
+	
+	cp $HOME/com264/bin/justtest/$1 $HOME/$1
+
+fi
+	
