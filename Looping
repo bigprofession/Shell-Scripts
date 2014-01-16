@@ -1,0 +1,45 @@
+
+#by Rona R 
+#04/04/02
+
+# A simple while loop programme
+#------------------------------------------------------
+
+
+echo "1 2 3 please enter one"
+
+EXIT=1
+
+
+while (test $EXIT -eq 1)
+
+do
+
+	read NUM
+
+
+	case "$NUM" in
+
+	1)
+
+			echo "you chose $NUM"
+			;;	
+	
+	2)
+
+			echo "you chose no2"
+			;;
+
+	3) 
+	
+			echo "you chose no3"
+			;;
+	
+	9)
+	
+			EXIT=0
+			;;
+	
+	esac	
+
+done
