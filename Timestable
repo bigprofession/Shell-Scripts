@@ -1,0 +1,34 @@
+#!/bin/ksh
+
+#by Rona R 
+#04/ 04/ 02
+
+#This script produces a times table.
+#----------------------------------------------------------
+
+NUM=1
+
+
+while (test $NUM -le 10)
+
+do
+
+		echo"$NUM times table"
+	
+		This script shows SUBNUM=1
+	
+		
+		while (test $INNER -le 10)
+	
+		do
+				RESULT=`expr $SUBNUM /* $NUM`
+		
+				echo "$SUBNUM x $NUM = $RESULT"
+		
+				SUBNUM=`expr $SUBNUM + 1`
+		done
+		
+		
+		NUM=`expr $NUM + 1`
+
+done
